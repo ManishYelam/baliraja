@@ -1,0 +1,72 @@
+/* General table styling */
+.table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Merge borders between cells */
+    margin-bottom: 1rem; /* Margin below the table */
+    font-size: 0.85rem; /* Default font size for the table */
+    background-color: #fff; /* Table background */
+  }
+  
+  /* Table header styling */
+  .table th {
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark text color */
+    font-weight: 600; /* Bold text */
+    text-align: center; /* Center align header text */
+    padding: 0.75rem; /* Padding inside cells */
+    border: 1px solid #dee2e6; /* Border around header cells */
+  }
+  
+  /* Table data cell styling */
+  .table td {
+    padding: 0.75rem; /* Padding inside data cells */
+    border: 1px solid #dee2e6; /* Border around data cells */
+    text-align: left; /* Left align text by default */
+    vertical-align: middle; /* Vertically center the content */
+    font-size: 0.85rem; /* Font size */
+  }
+  
+  /* Center-align text for specific columns */
+  .table .text-center {
+    text-align: center;
+  }
+  
+  /* Styling for action buttons in table */
+  .table .action-btn {
+    padding: 0.2rem 0.5rem; /* Padding for action buttons */
+    font-size: 0.75rem; /* Small font size for buttons */
+    cursor: pointer; /* Pointer cursor */
+  }
+  
+  /* Hover effect for rows */
+  .table tbody tr:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+  }
+  
+  /* Styling for images inside table */
+  .table td img {
+    max-width: 50px; /* Set maximum width for images */
+    height: auto; /* Auto height based on aspect ratio */
+  }
+  
+  /* Pagination styling */
+  .pagination {
+    justify-content: center; /* Center the pagination controls */
+    padding: 1rem 0; /* Padding around pagination */
+  }
+  
+  /* Responsive table for smaller screens */
+  @media (max-width: 768px) {
+    .table {
+      font-size: 0.75rem; /* Smaller font size on small screens */
+    }
+  
+    .table th, .table td {
+      padding: 0.5rem; /* Reduce padding */
+    }
+  
+    .table td img {
+      max-width: 30px; /* Smaller images on small screens */
+    }
+  }
+  
